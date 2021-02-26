@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum-Pad</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="body">
+            <h1>Drum Pad</h1>
+            <p>Use your keyboard (preferably french) to make music ! </p>
+            <p>We recommend you using your keyboard for this but you can also use your mouse and click on the buttons. Have fun :) !</p>
+            <p> - Arthur Thouin (G3)</p>
+        <div class="container">
+            <div class="row1">
+                <div data-key="65" onclick="playSample('clap')" class="key clap left">
+                    <kbd>A</kbd>
+                    <span class="text">CLAP</span>
+                </div>
+                <div data-key="90" onclick="playSample('clap2')" class="key clap2">
+                    <kbd>Z</kbd>
+                    <span class="text">CLAP 2</span>
+                </div>
+                <div data-key="69" onclick="playSample('kick')" class="key kick">
+                    <kbd>E</kbd>
+                    <span class="text">KICK</span>
+                </div>
+                <div data-key="82" onclick="playSample('kick2')" class="key kick2">
+                    <kbd>R</kbd>
+                    <span class="text">KICK 2</span>
+                </div>
+                <div data-key="84" onclick="playSample('kick3')" class="key kick3">
+                    <kbd>T</kbd>
+                    <span class="text">KICK 3</span>
+                </div>
+                <div data-key="89" onclick="playSample('clash')" class="key clash">
+                    <kbd>Y</kbd>
+                    <span class="text">CLASH</span>
+                </div>
+                <div data-key="85" onclick="playSample('bango')" class="key bango">
+                    <kbd>U</kbd>
+                    <span class="text">BANGO</span>
+                </div>
+                <div data-key="73" onclick="playSample('bango2')" class="key bango2">
+                    <kbd>I</kbd>
+                    <span class="text">BANGO 2</span>
+                </div>
+                <div data-key="79" onclick="playSample('bango3')" class="key bango3">
+                    <kbd>O</kbd>
+                    <span class="text">BANGO 3</span>
+                </div>
+                <div data-key="80" onclick="playSample('box')" class="key box">
+                    <kbd>P</kbd>
+                    <span class="text">BOX</span>
+                </div>
+            </div>
+            <div class="row2">
+                <div data-key="81" onclick="playSample('oh')" class="key oh left">
+                    <kbd>Q</kbd>
+                    <span class="text">OH</span>
+                </div>
+                <div data-key="83" onclick="playSample('oof')" class="key oof">
+                    <kbd>S</kbd>
+                    <span class="text">OOF</span>
+                </div>
+                <div data-key="68" onclick="playSample('bass')" class="key bass">
+                    <kbd>D</kbd>
+                    <span class="text">BASS</span>
+                </div>
+                <div data-key="70" onclick="playSample('bass2')" class="key bass2">
+                    <kbd>F</kbd>
+                    <span class="text">BASS 2</span>
+                </div>
+                <div data-key="71" onclick="playSample('snap')" class="key snap">
+                    <kbd>G</kbd>
+                    <span class="text">SNAP</span>
+                </div>
+                <div data-key="72" onclick="playSample('punch')" class="key punch">
+                    <kbd>H</kbd>
+                    <span class="text">PUNCH</span>
+                </div>
+                <div data-key="74" onclick="playSample('box2')" class="key box2">
+                    <kbd>J</kbd>
+                    <span class="text">BOX 2</span>
+                </div>
+                <div data-key="75" onclick="playSample('vocal')" class="key vocal">
+                    <kbd>K</kbd>
+                    <span class="text">VOCAL</span>
+                </div>
+                <div data-key="76" onclick="playSample('vocal2')" class="key vocal2">
+                    <kbd>L</kbd>
+                    <span class="text">VOCAL 2</span>
+                </div>
+                <div data-key="77" onclick="playSample('box3')" class="key box3">
+                    <kbd>M</kbd>
+                    <span class="text">BOX 3</span>
+                </div>
+            </div>
+            <div class="row3">
+                <div class="key invisible"></div>
+                <div class="key invisible"></div>
+                <div data-key="87" onclick="playSample('bap')" class="key left bap">
+                    <kbd>W</kbd>
+                    <span class="text">BAP</span>
+                </div>
+                <div data-key="88" onclick="playSample('clash2')" class="key clash2">
+                    <kbd>X</kbd>
+                    <span class="text">CLASH 2</span>
+                </div>
+                <div data-key="67" onclick="playSample('kick4')" class="key kick4">
+                    <kbd>C</kbd>
+                    <span class="text">KICK 3</span>
+                </div>
+                <div data-key="86" onclick="playSample('punch2')" class="key punch2">
+                    <kbd>V</kbd>
+                    <span class="text">PUNCH 2</span>
+                </div>
+                <div data-key="66" onclick="playSample('bruh')" class="key bruh">
+                    <kbd>B</kbd>
+                    <span class="text">BRUH</span>
+                </div>
+                <div data-key="78" onclick="playSample('micDrop')" class="key micDrop">
+                    <kbd>N</kbd>
+                    <span class="text">MIC DROP</span>
+                </div>
+                <div class="key invisible"></div>
+                <div class="key invisible"></div>
+            </div>
+        </div>
+    </div>
+
+<!-- First Row -->
+    <audio data-key="65" src="sounds/clap/clap.mp3" id="clap"></audio>
+    <audio data-key="90" src="sounds/clap/clap2.wav" id="clap2"></audio>
+    <audio data-key="69" src="sounds/kick/kick.WAV" id="kick"></audio>
+    <audio data-key="82" src="sounds/kick/kick2.wav" id="kick2"></audio>
+    <audio data-key="84" src="sounds/kick/kick3.wav" id="kick3"></audio>
+    <audio data-key="89" src="sounds/clash/clash.wav" id="clash"></audio>
+    <audio data-key="85" src="sounds/bango/bango.wav" id="bango"></audio>
+    <audio data-key="73" src="sounds/bango/bango2.wav" id="bango2"></audio>
+    <audio data-key="79" src="sounds/bango/bango3.wav" id="bango3"></audio>
+    <audio data-key="80" src="sounds/box/box.wav" id="box"></audio>
+
+<!-- Second Row -->
+    <audio data-key="81" src="sounds/memes/oh.wav" id="oh"></audio>
+    <audio data-key="83" src="sounds/memes/oof.wav" id="oof"></audio>
+    <audio data-key="68" src="sounds/basses/bass.wav" id="bass"></audio>
+    <audio data-key="70" src="sounds/basses/bass2.wav" id="bass2"></audio>
+    <audio data-key="71" src="sounds/hip-hop/snap.wav" id="snap"></audio>
+    <audio data-key="72" src="sounds/hip-hop/punch.wav" id="punch"></audio>
+    <audio data-key="74" src="sounds/snare/snare.wav" id="box2"></audio>
+    <audio data-key="75" src="sounds/moombah/Moombah-Vocal-2.wav" id="vocal"></audio>
+    <audio data-key="76" src="sounds/moombah/Moombah-Vocal-3.wav" id="vocal2"></audio>
+    <audio data-key="77" src="sounds/snare/snare2.wav" id="box3"></audio>
+
+    <!-- Third Row -->
+    <audio data-key="87" src="sounds/hip-hop/bap.wav" id="bap"></audio>
+    <audio data-key="88" src="sounds/hip-hop/clash.wav" id="clash2"></audio>
+    <audio data-key="67" src="sounds/hip-hop/kick.wav" id="kick4"></audio>
+    <audio data-key="86" src="sounds/hip-hop/punch2.wav" id="punch2"></audio>
+    <audio data-key="66" src="sounds/memes/bruh.wav" id="bruh"></audio>
+    <audio data-key="78" src="sounds/hip-hop/mic-drop.wav" id="micDrop"></audio>
+
+
+
+
+    <script src="./script.js"> </script>
+</body>
+</html>
