@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body
+{
+    text-shadow: 5px 5px 20px #3815a144;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-135deg, #ff9064, #a646e6, #3915a1);
+    flex-direction: column;
+    align-items: center;
+}
+.container
+{
+    flex-wrap: wrap;
+    width: 1050px;
+    background: #fafafa;
+    display: flex;
+    padding: 3.5vw 5vw 4vw 5vw;
+    box-shadow: 5px 5px 20px #3815a144;
+}
+
+h1
+{
+    color: #eeeeee;
+    font-size: 5rem;
+    border-bottom: 5px solid #eeeeee;
+}
+p
+{
+    margin-top: 1vh;
+    color: #eeeeee;
+    font-size: 1rem;
+}
+.text
+{
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #535c68;
+}
+
+/* Rows */
+
+.row1
+{
+    margin: 0;
+    display: flex;
+}
+.row1 .key
+{
+    border-top: #ffffff solid 2px;
+}
+
+.row2
+{
+    display: flex;
+}
+.row3
+{
+    display: flex;
+}
+
+.invisible
+{
+    visibility: hidden;;
+}
+.left
+{
+    border-left:#ffffff solid 2px;
+}
+
+/* Clickable Div to make sound */
+.key
+{
+    font-size: 1.25rem;
+    padding: 1rem .2rem;
+    transition: all .07s ease;
+    width: 6rem;
+    text-align: center;
+    color: #666666;
+    cursor: pointer;
+    border-bottom: #ffffff solid 2px;
+    border-right: #ffffff solid 2px;
+}
+
+kbd
+{
+    display: block;
+}
+
+
+/* CLASS FOR TRANSITION */
+.playing 
+{
+    transform: scale(0.8);
+    box-shadow: 0 0 1rem #ffc600;
+  }
+/* COLORS */
+
+.clap
+{
+    background: #effdf0;
+}
+
+.clap2
+{
+    background:#ddfae1;
+}
+
+.kick
+{
+    background:#ccf8d2;
+}
+.kick2
+{
+    background:#bbf5c3;
+}
+.kick3
+{
+    background:#aaf3b4;
+}
+.clash
+{
+    background:#99f0a5;
+}
+.bango
+{
+    background:#88ed96;
+}
+.bango2
+{
+    background:#77eb87;
+}
+.bango3
+{
+    background: #66e878;
+}
+.box
+{
+    background: #55e669;
+}
+
+/* Row 2 Color */
+.oh
+{
+    background: #fefaf2;
+}
+.oof
+{
+    background: #fdf2df;
+}
+.bass
+{
+    background: #fceacd;
+}
+.bass2
+{
+    background: #fce2ba;
+}
+.snap
+{
+    background: #fbdaa7;
+}
+.punch
+{
+    background: #fad395;
+}
+.box2
+{
+    background: #f9cb82;
+}
+.vocal
+{
+    background: #f8c36f;
+}
+.vocal2
+{
+    background: #f7bb5d;
+}
+.box3
+{
+    background: #f6b34a;
+}
+
+/* Row 3 */
+
+.bap
+{
+    background: #ede1f2;
+}
+
+.clash2
+{
+    background: #e5d4ec;
+}
+
+.kick4
+{
+    background: #ddc6e6;
+}
+.punch2
+{
+    background: #d4b8e0;
+}
+.bruh
+{
+   background: #ccabda;
+}
+.micDrop
+{
+    background: #c49dd4;
+}
+
